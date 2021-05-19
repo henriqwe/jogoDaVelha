@@ -1,0 +1,114 @@
+body {
+    text-align: center;
+    background-color: rgb(107, 0, 0);
+}
+
+h1 {
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 5%;
+}
+
+#board {
+    border-radius: 10%;
+    width: 320px;
+    height: 320px;
+    padding: 10px;
+    padding-top: 11px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+#divScoreboard {
+    background-color: white;
+    width: 280px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+#scoreboardO,
+#scoreboardX {
+    font-weight: bold;
+}
+
+.O {
+    position: relative;
+}
+
+.O::after {
+    content: "\2B55";
+    position: absolute;
+    font-size: 50px;
+    line-height: 100px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+th,
+td {
+    width: 150px;
+}
+
+.X {
+    position: relative;
+}
+
+.X::after {
+    content: "\274C";
+    position: absolute;
+    font-size: 50px;
+    line-height: 100px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+#modalChoseAPlayer,
+#modalWinPlayer0,
+#modalWinPlayer1,
+#modalDraw {
+    visibility: hidden;
+    display: none;
+}
+
+#modalChoseAPlayer.show,
+#modalWinPlayer0.show,
+#modalWinPlayer1.show,
+#modalDraw.show {
+    display: block;
+    visibility: visible;
+    background-color: white;
+    width: 200px;
+    height: 15px;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    bottom: 115px;
+    right: 0;
+    margin: auto;
+    margin-top: 5px;
+}
